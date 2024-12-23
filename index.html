@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+
+    <header>
+        <img src="./Icons/playlist.svg" id="playlist-img">
+        <h2>FEEL THE MUSIC</h2>
+        <img src="./Icons/music.svg" id="music-img">
+    </header>
+
+    <main>
+        <div class="left">
+            <div class="song-image">
+
+            </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img src="./Icons/volume.svg" id="vol-svg">
+                </div>
+
+                <input type="range" id="volume-range"  onchange="volume()">
+            </div>
+        </div>
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">Ve kamleya</h3>
+                <h5 id="song-singer">Arijit Singh</h3>
+            </div>
+
+            <input type="range" id="song-duration" onchange="duration()">
+
+            <div class="controls">
+                <div class="prev-img">
+                    <img src="./Icons/prev.svg" alt="previous" id="prev-img" onclick="previousSong()">
+                </div>
+                <div class="play-pause">
+                    <img src="./Icons/play.svg" alt="play" id="play-pause" onclick="playPause()">
+                </div>
+                <div class="next-img">
+                    <img src="./Icons/next.svg" alt="next" id="next-img" onclick="nextSong()">
+                </div>          
+            </div>
+        </div>
+
+
+
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="./Cover/image1.jpg">
+                <div class="song-details">
+                    <h3>Ve Kamleya</h3>
+                    <h2>Arijit Singh</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="./Cover/image2.jpg">
+                <div class="song-details">
+                    <h3>Apna Bana Le</h3>
+                    <h2>Vishal Mishra</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="./Cover/image3.jpg">
+                <div class="song-details">
+                    <h3>Pehle Bhi Mai</h3>
+                    <h2>Arijit Singh</h2>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="./Cover/image4.jpg">
+                <div class="song-details">
+                    <h3>Satranga</h3>
+                    <h2>Arijit Singh</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
